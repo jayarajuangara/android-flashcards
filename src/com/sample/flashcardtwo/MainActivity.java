@@ -12,7 +12,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
+import com.sample.flashcardtwo.MyActivity;
 public class MainActivity extends ActionBarActivity {
 	ListView view;
 	String str[]={"hello","hai","how","fine","well","go","sorry","hello","hai","how","fine","well","go","sorry",
@@ -43,7 +43,7 @@ public class MainActivity extends ActionBarActivity {
 					arr[j++]=str[i];
 				}
 				Bundle bun=new Bundle();
-				bun.putStringArray("key",arr);
+				bun.putStringArray("data",arr);
 				Intent intent=new Intent(MainActivity.this,MyActivity.class);
 				intent.putExtras(bun);
 				startActivity(intent);

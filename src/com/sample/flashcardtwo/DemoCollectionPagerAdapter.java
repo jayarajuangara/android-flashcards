@@ -17,6 +17,7 @@ public class DemoCollectionPagerAdapter extends FragmentStatePagerAdapter {
    	this.list=list;
        
    }
+  
 
    @Override
    public Fragment getItem(int i) {
